@@ -1,0 +1,30 @@
+ 
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+    setlocale(LC_ALL,"Turkish");
+    int s1,s2,secim,sonuc;
+    cout<<"1. sayıyı gir: ";
+    cin>>s1;
+    cout<<"2. sayıyı gir: ";
+    cin>>s2;
+    cout<<"Seçimini gir : 1- TOPLA 2-ÇIKAR 3-ÇARP 4-BÖL: ";
+    cin>>secim;
+    
+    if(secim==1)
+        sonuc=s1+s2;
+    else if(secim==2)
+        sonuc=s1-s2;
+    else if(secim==3)
+        sonuc=s1*s2;
+    else if(secim==4)
+        sonuc=s1/s2;
+    else 
+        cout<<"yanlış seçim";
+        
+        
+    cout<<"Sonuç : "<<sonuc;
+}
